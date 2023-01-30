@@ -9,7 +9,8 @@ const STATUS_MESSAGE = {
   PAGE_NOT_FOUND_MESSAGE: 'Запрашиваемый ресурс не найден.',
   UNAUTHORIZED_MOVIE_DELETION_MESSAGE: 'Запрашиваемый ресурс не найден.',
   UNAUTHORIZED_MESSAGE: 'Требуется авторизация',
-  TOO_MANY_REQUESTS: 'С вашего IP-адреса отправляется слишком много запросов.'
+  TOO_MANY_REQUESTS: 'С вашего IP-адреса отправляется слишком много запросов.',
+  INVALID_URL: 'Необходимо указать корректные URL-адреса',
 };
 
 module.exports = {
