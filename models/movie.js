@@ -10,7 +10,7 @@ const movieSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  counrty: {
+  country: {
     type: String,
     required: true,
   },
@@ -19,7 +19,7 @@ const movieSchema = new mongoose.Schema({
     required: true,
   },
   duration: {
-    type: String,
+    type: Number,
     required: true,
   },
   year: {
@@ -35,7 +35,7 @@ const movieSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (link) => isURL(link),
-      message: 'Некорректный формат URL',
+      message: 'Некорректный формат URL постера',
     },
   },
   thumbnail: {
@@ -43,7 +43,7 @@ const movieSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (link) => isURL(link),
-      message: 'Некорректный формат URL',
+      message: 'Некорректный формат URL миниатрюры постера',
     },
   },
   trailerLink: {
@@ -51,7 +51,7 @@ const movieSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (link) => isURL(link),
-      message: 'Некорректный формат URL',
+      message: 'Некорректный формат URL трейлера',
     },
   },
   owner: {
@@ -60,7 +60,7 @@ const movieSchema = new mongoose.Schema({
     required: true,
   },
   movieId: {
-    type: String,
+    type: Number,
     required: true,
   },
 });
