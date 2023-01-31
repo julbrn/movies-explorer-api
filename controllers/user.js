@@ -50,6 +50,8 @@ const updateProfile = (req, res, next) => {
     .catch((err) => {
       if (err.name === 'ValidationError' || err.name === 'CastError') {
         next(new BadRequestError(STATUS_MESSAGE.INCORRECT_DATA_MESSAGE));
+      } else if (err.code === 11000) {
+        next(new ConflictError(STATUS_MESSAGE.CONFLICT_MESSAGE));
       } else {
         next(err);
       }
