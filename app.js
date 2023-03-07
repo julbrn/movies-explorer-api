@@ -21,6 +21,7 @@ app.use(cors({
     'http://localhost:3001',
     'https://localhost:3001',
     'localhost:3000',
+    'localhost:3001',
   ],
   credentials: true,
 }));

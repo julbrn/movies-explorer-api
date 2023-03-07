@@ -5,6 +5,10 @@
 Backend: https://api.julbrndiploma.nomoredomainsclub.ru
 IP: 51.250.11.190
 
+## Ссылка на пулл-реквест
+
+https://github.com/julbrn/movies-explorer-api/pull/2
+
 ## Запуск проекта
 
 `npm run start` — запуск сайта на локальном сервере http://localhost:3000.  
